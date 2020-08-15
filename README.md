@@ -12,6 +12,7 @@ jdbc.username=用户名
 jdbc.password=密码
 
 二、generatorConfig.xml
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
@@ -90,6 +91,7 @@ resource=“mybatis-generator/generator.properties” 这里要写相对路径
 tableName=“数据库表名” domainObjectName=“生成entity名” mapperName=“生成dao名” tableName为数据库中要生成文件的名字，domainObjectName为entity下生成的实体类的名字，mapperName为dao下生成接口的名字
 
 三、pom.xml
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -105,13 +107,11 @@ tableName=“数据库表名” domainObjectName=“生成entity名” mapperNam
 	<version>0.0.1-SNAPSHOT</version>
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
